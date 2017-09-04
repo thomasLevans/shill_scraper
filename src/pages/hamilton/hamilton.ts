@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { BotNetworkPage } from '../../pages/bot-network/bot-network';
 
+import { TrendingUrls } from '../../data/trending_urls';
+
 /**
  * Generated class for the HamiltonPage page.
  *
@@ -18,14 +20,16 @@ import { BotNetworkPage } from '../../pages/bot-network/bot-network';
 export class HamiltonPage {
 
   title: string;
+  trendingUrls: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.title = 'Hamilton68';
+    this.trendingUrls = TrendingUrls;
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HamiltonPage');
-    // console.log(this.navCtrl.getViews());
+    console.log(this.trendingUrls);
   }
   
   goBotNetwork() {
