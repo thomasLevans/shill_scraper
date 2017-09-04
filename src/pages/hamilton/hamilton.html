@@ -14,8 +14,44 @@
 
 
 <ion-content padding>
-    <button (click)="goBotNetwork()">
-        Bot Network
-    </button>
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12>
+        <h5>
+          What is Hamilton68?
+        </h5>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-7></ion-col>
+      <ion-col col-3>
+        <button (click)="goBotNetwork()">
+            View the Network
+        </button>
+      </ion-col>
+      <ion-col col-2>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col col-12>
+          <ion-card>
+            <ion-card-header>Where these links point</ion-card-header>
+            <ion-card-content>
+              <ion-slides pager>
+                  
+                <ion-slide *ngFor='let url of trendingUrls' margin-bottom>
+                  <h2>{{ url.page_title }}</h2>
+                  <p>ipso ipsum lecto ipso ipsum lecto ipso ipsum lecto </p>
+                </ion-slide>
+              
+              </ion-slides>    
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+  </ion-grid>
 
 </ion-content>
