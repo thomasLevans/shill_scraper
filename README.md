@@ -5,7 +5,7 @@ This is a side project of mine in order to gain some familiarity with ionic apps
 The app allows the user to visualize the social graph of tweets that contain links from the [Hamilton68](http://dashboard.securingdemocracy.org/) top trending URLs. These URLs tend to be articles being pushed by known russian twitter bots. The purpose of shill_scraper is to try to visualize the social influence of the bots.
 
 ## UI Mockup
-![Image of shill_scraper mockup](shill_scraper.svg)
+![Image of shill_scraper mockup](shill_scraper.jpeg)
 
 ## Running the Project
 Assuming you have [ionic]() installed do the following:
