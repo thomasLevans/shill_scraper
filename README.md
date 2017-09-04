@@ -1,26 +1,23 @@
-This is a starter template for [Ionic](http://ionicframework.com/docs/) projects.
+# Shill Scraper
+This is a side project of mine in order to gain some familiarity with ionic apps.  
 
-## How to use this template
+## Project Premise
+The app allows the user to visualize the social graph of tweets that contain links from the [Hamilton68](http://dashboard.securingdemocracy.org/) top trending URLs. These URLs tend to be articles being pushed by known russian twitter bots. The purpose of shill_scraper is to try to visualize the social influence of the bots.
 
-*This template does not work on its own*. The shared files for each starter are found in the [ionic2-app-base repo](https://github.com/ionic-team/ionic2-app-base).
+## UI Mockup
+![Image of shill_scraper mockup](shill_scraper.jpeg)
 
-To use this template, either create a new ionic project using the ionic node.js utility, or copy the files from this repository into the [Starter App Base](https://github.com/ionic-team/ionic2-app-base).
+## Running the Project
+Assuming you have [ionic]() installed do the following:
+1. clone the repo. := `$ git clone git@github.com:thomasLevans/shill_scraper.git`
+2. serve the app. := `$ cd shill_scraper && ionic serve`
+3. the app will run on `localhost:8100` and should launch in a browser window automatically.
 
-### With the Ionic CLI:
+## CI and Deployment
+_TBD_
 
-Take the name after `ionic2-starter-`, and that is the name of the template to be used when using the `ionic start` command below:
+### CI
+_TBD_
 
-```bash
-$ sudo npm install -g ionic cordova
-$ ionic start myBlank blank
-```
-
-Then, to run it, cd into `myBlank` and run:
-
-```bash
-$ ionic cordova platform add ios
-$ ionic cordova run ios
-```
-
-Substitute ios for android if not on a Mac.
-
+### Deployment
+_TBD_
