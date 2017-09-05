@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { Tweets } from '../../data/tweets';
 
+import { DataProvider } from '../../providers/data/data';
+
 /**
  * Generated class for the TweetsPage page.
  *
@@ -14,15 +16,16 @@ import { Tweets } from '../../data/tweets';
 @Component({
   selector: 'page-tweets',
   templateUrl: 'tweets.html',
+  providers: [DataProvider]
 })
 export class TweetsPage {
 
   title: string;
   tweets: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public dataProvider: DataProvider) {
     this.title = 'Tweets';
-    this.tweets = Tweets.statuses;
+    this.tweets = this.dataProvider.tweets;
   }
 
   ionViewDidLoad() {

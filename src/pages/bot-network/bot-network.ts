@@ -3,6 +3,8 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 import { TweetsPage } from '../../pages/tweets/tweets';
 
+import { DataProvider } from '../../providers/data/data';
+
 import * as d3 from 'd3';
 
 import { nodes_data, links_data } from '../../data/ex_data';
@@ -38,7 +40,7 @@ export class BotNetworkPage {
 
   margin = {top: 20, right: 20, bottom: 30, left: 40};
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public dataProvider: DataProvider) {
     this.title = 'Bot Network';
     this.height = 320;
     this.width = 320;
